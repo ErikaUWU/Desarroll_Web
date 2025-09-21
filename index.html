@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contabilidad</title>
+
+    <link rel="stylesheet" href="Archivos/styles.css">
+
+
+</head>
+<body>
+    <main>
+        <h4>EJERCITADOR DE CONTABILIDAD</h4>
+        <p>La Comercializadora Central, registra las siguientes operaciones de su primer mes. La cuenta a afectar es Bancos</p>
+        
+        <ul >
+            <li>El saldo inicial es de 850,000</li>
+            <li>Se pagó al proveedor INMOBILIARIA SA la cantidad de $17,700</li>
+            <li>Se vendió una máquina envasadora por la cantidad de $120,000</li>
+            <li>Se entregó viáticos por viaje a Monterrey al vendedor Javier Barrera por $70,000</li>
+            <li>El cliente ZAZA SA pagó por un servicio la cantidad de $25,000</li>
+        </ul>
+
+        <table>
+                <tr>
+                    <th></th>
+                    <th>CARGO</th>
+                    <th>ABONO</th>
+                </tr>
+                <tr>
+                    <td>Bancos</td>
+                    <td class="fondo"><input type="number" id="banco_cargo"></td>
+                    <td class="fondo"><input type="number" id="banco_abono"></td>
+                </tr>
+                <tr>
+                    <td>Pago proveedor Inmobiliaria SA</td>
+                    <td class="fondo"><input type="number" id="proveedor_cargo"></td>
+                    <td class="fondo"><input type="number" id="proveedor_abono"></td>
+                </tr>
+                <tr>
+                    <td>Cobro cheque por máquina envasadora</td>
+                    <td class="fondo"><input type="number" id="cheque_cargo"></td>
+                    <td class="fondo"><input type="number" id="cheque_abono"></td>
+                </tr>
+                <tr>
+                    <td>Pago de Zaza SA</td>
+                    <td class="fondo"><input type="number" id="zaza_cargo"></td>
+                    <td class="fondo"><input type="number" id="zaza_abono"></td>
+                </tr>
+                <tr>
+                    <td>Viáticos a Monterrey</td>
+                    <td class="fondo"><input type="number" id="viatico_cargo"></td>
+                    <td class="fondo"><input type="number" id="viatico_abono"></td>
+                </tr>
+                <tr>
+                    <td>TOTALES</td>
+                    <td class="fondo"><input type="number" id="total_cargo" disabled></td>
+                    <td class="fondo"><input type="number" id="total_abono" disabled></td>
+                </tr>
+                <tr>
+                    <td>SALDO FINAL</td>
+                    <td class="fondo"><input type="number" id="saldo_cargo" disabled></td>
+                    <td class="fondo"><input type="number" id="saldo_abono" disabled></td>
+                </tr>
+        </table>
+        <div>
+            <button id="boton" onclick="operaciones()">Revisar</button>
+        </div>
+        
+    </main>
+
+    
+    <script src="Archivos/script.js"></script>
+    
+    
+</body>
+</html>
